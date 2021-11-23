@@ -1,0 +1,212 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel='stylesheet' href='style.css'>
+<!--Top section of webpage-->
+  
+<div class = "container">
+  <header class = "header">
+    <h1 id = "title"> COVID-19 Medical Questionnaire </h1>
+    
+    <p id = "description"> Complete this form to report your coronavirus symptoms and status.  This form will help us best attend to you, and manage the potential spread of the virus. </p>
+  </header>
+   
+  <!-- Form -->
+  <form id = "survey-form">
+    <div class = "form-blocks">
+      <!--For first name -->
+      <label id = "name-label" for = "first-name"> First Name </label>
+      <input 
+             type = "text"
+             name = "first-name"
+             id = "name"
+             placeholder = "Enter your first name"
+             class = "form-control"
+             required 
+             </input>
+      </div>
+    
+     <!--For last name -->
+    <div class = "form-blocks">
+      <label id = "last-name-label" for = "last-name"> Last Name </label>
+      <input 
+             type = "text"
+             name = "last-name"
+             id = "surname"
+             placeholder = "Enter your last name"
+             class = "form-control"
+             required 
+             </input>
+      </div>
+    
+    <!--Email Block -->
+    <div class = "form-blocks">
+      <label id = "email-label" for = "email"> Email Address </label>
+      <input
+             type = "email"
+             name = "email"
+             class = "form-control"
+             id = "email"
+             placeholder = "Enter your email address"
+             required
+             </input>
+    </div>
+      
+      <!-- Phone Number -->
+      <div class = "form-blocks">
+      <label id = "number-label" for = "phone-number"> Phone Number </label>
+      <input
+             type = "number"
+             name = "phone-number"
+             class = "form-control"
+             id = "phone-number"
+             placeholder = "Enter your phone number"
+             required
+             </input>
+    </div>
+        
+        <!-- Age -->
+              <div class = "form-blocks">
+                <label id = "age-label" for = "number"> Age<span class = "clue"> (optional)</span></label>
+      <input
+             type = "number"
+             name = "age"
+             id = "number"
+             min = "10"
+             max = "120"
+             class = "form-control"
+             placeholder = "Age"
+             required
+             </input>
+    </div>
+    <!-- Sex-->
+    <div class = "form-blocks">
+      <p> What is your biological sex? </p>
+      <select 
+              id = "dropdown" 
+              name = "sex" 
+              class = "form-control"
+              required>
+        <option disabled selected value>Select your  biological sex </option>
+        <option value = "female"> Female </option>
+        <option value = "male"> Male </option>
+      </select>
+    </div>
+    
+    <!-- Symptoms -->
+    <div class = "form-blocks">
+      <p> What symptom(s) are you experiencing or experienced? </p>
+      <label>
+        <input
+               name = "symptoms"
+               value = "chest-pains"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Chest Pains 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "dry-cough"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Dry Cough 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "fatigue"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Fatigue 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "fever"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Fever 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "headache"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Headache 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "breathing"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Difficulty/Shortness of Breath 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "vomitting"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Vomitting 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "nasal-congestion"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Nasal Congestion 
+      </label>
+      <label>
+        <input
+               name = "symptoms"
+               value = "appetite"
+               type = "checkbox"
+               class = "input-checkbox"
+               /> Low Appetite 
+      </label>
+      </div>
+    
+    <!-- Test-->
+    <div class = "form-blocks">
+      <p> Has a COVID-19 test been done?  </p>
+      <label>
+        <input
+          name = "test"
+          value = "yes"
+          type = "radio"
+          class = "input-radio"
+          checked
+        />Yes
+      </label>
+      <label>
+        <input
+          name = "test"
+          value = "no"
+          type = "radio"
+          class = "input-radio"
+          checked
+        />No
+      </label>
+    </div>
+    
+    <!-- Additional information-->
+    <div class = "form-blocks">
+      <p> Is there any additional information you would like us to know? </p>
+      <textarea
+               id = "infos"
+               class = "input-textarea"
+               name ="info"
+               placeholder ="Enter your comment here..."
+                >
+      </textarea>
+    </div>
+    
+    <!--Submit button -->
+    <div class = "form-blocks">
+      <button type = "submit" id = "submit" class = "submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
